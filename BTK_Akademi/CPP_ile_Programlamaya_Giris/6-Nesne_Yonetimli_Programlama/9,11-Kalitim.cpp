@@ -2,10 +2,13 @@
 
 
 class Silah{
+    protected:
+        int deger;
     public:
         std::string isim;
         int mermiKapasitesi;
-}
+        std::string renk;
+};
 
 class Ak47 : public Silah{
     public:
@@ -16,7 +19,7 @@ class Ak47 : public Silah{
         void ateset(){
             ///
         }
-}
+};
 
 class Pistol : public Silah{
     public:
@@ -25,7 +28,7 @@ class Pistol : public Silah{
         void ateset(){
                 ///
             }
-}
+};
 
 class M4A1 : public Silah{
     public:
@@ -36,12 +39,14 @@ class M4A1 : public Silah{
         void ateset(){
                 ///
             }
-}
+};
 
 
 int main(){
     Ak47 ak47;
-    ak47_1.isim= "AK47 Yeni Dizayn";
+    ak47.isim= "AK47 Yeni Dizayn";
+    ak47.renk= "Kirmizi";
+    // ak47.deger= 10;  // Silah sinifi icerisinde protected olduğu için erişilemez
 
     M4A1 m1;
     m1.isim= "M1A1 Yeni Silah";
