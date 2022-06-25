@@ -43,10 +43,21 @@ class M4A1 : public Silah{
 
 
 int main(){
-    Ak47 ak47;
-    Ak47 *akPtr= &ak47;
+    int sayi= 10;
+    int &deneme= sayi;  // Referans
 
-    std::cout << akPtr;
+    deneme= 5;  // Referansla veriyi degistirdik
+    std::cout << sayi;  // Sayi degisti
+
+    //----------------------------
+
+    Ak47 ak47;
+    Ak47 *akPtr= &ak47;  // Pointer
+
+    std::cout << akPtr;  // Bellek adresini yazdirdik.
+
+
+    Ak47 &akRef= ak47;  // Referans
 
     return 0;
 }
