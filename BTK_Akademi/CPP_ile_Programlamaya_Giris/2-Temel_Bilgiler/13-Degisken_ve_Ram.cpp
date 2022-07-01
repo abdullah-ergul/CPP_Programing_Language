@@ -10,5 +10,5 @@ int main(){
     std::cout << ptr << "\n";
     std::cout << &ptr << "\n";
 
-    return 0;;
+    return 0;
 }
